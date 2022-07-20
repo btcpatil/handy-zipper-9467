@@ -1,0 +1,112 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./storeMap.css">
+    <script src="https://kit.fontawesome.com/6a4368f5b1.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="defaultMap()">
+
+    <!-- store locator dody -->
+    <div id="container">
+        <div id="head">
+            <h1>Store Locator</h1>
+        </div>
+        <div id="search-box">
+            <input class="search" type="text" id="city" placeholder="Type a zip code or address...">
+            <button id="btn" onclick="getCity()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div id="map-container">
+            <div id="leftbody">
+                <hr>
+                <div id="stores">
+                    <span id="location-icons"><i class="fa-solid fa-location-dot"></i></span>
+                    <span id="location-info">Sorry, we didn't find any stores nearby</span>
+                </div>
+            </div>
+            <div id="rightbody">
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="600" height="500" id="gmap_canvas" frameborder="0" scrolling="no"
+                            marginheight="0" marginwidth="0">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+    <div id="footer">
+        <div id="flex-footer">
+            <div id="one-flex">
+                <h4>Info</h4>
+                <p>Contact us</p>
+                <p>FAQ</p>
+                <p>Blog</p>
+                <p>Store Locator</p>
+                <p>Careers</p>
+            </div>
+            <div id="two-flex">
+                <h4>Polices</h4>
+                <p>Shipping & Returns</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy</p>
+                <p>CCPA</p>
+                <P>Accessibility</P>
+            </div>
+            <div id="three-flex">
+                <h4>Contact Us</h4>
+                <div id="footer-mailId">
+                    <p><strong>Email:</strong></p>
+                    <p>writetous@himalayausa.com</p>
+                </div>
+                <div id="footer-phoneNumber">
+                    <p><strong>Phone:</strong></p>
+                    <p>1-800-869-4640</p>
+                    <p>Mon-Fri, 8am-5pm CT</p>
+                </div>
+                <div id="footer-address">
+                    <p><strong>Mail:</strong></p>
+                    <p>Himalaya Wellness</p>
+                    <p>1101 Gillingham Lane
+                        Sugar Land, TX 77478​</p>
+                </div>
+            </div>
+            <div id="four-flex">
+                <h4>Subscribe to Our Newsletter!</h4>
+                <div id="flex-four-mail">
+                    <input placeholder="Enter your e-mail">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <p>By entering your email, you agree to our Terms & Conditions and Privacy Policy.</p>
+                <div id="socialMedia">
+                    <span>Follow Us:</span>
+                    <div><i class="fa-brands fa-facebook-f"></i></div>
+                    <div><i class="fa-brands fa-twitter"></i></div>
+                    <div><i class="fa-brands fa-instagram-square"></i></div>
+                    <div><i class="fa-brands fa-youtube"></i></div>
+                </div>
+            </div>
+
+        </div>
+        <div id="footer-bottom">
+            <p>© 2022 Himalaya Wellness. All rights reserved.</p>
+            <div>*THESE STATEMENTS HAVE NOT BEEN EVALUATED BY THE FOOD AND DRUG ADMINISTRATION. THIS PRODUCT IS NOT INTENDED TO DIAGNOSE, TREAT, CURE OR PREVENT ANY DISEASE.</div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+
+<script src="./storeMap.js"></script>
