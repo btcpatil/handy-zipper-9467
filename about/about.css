@@ -1,0 +1,136 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+#grass {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+#image {
+  height: 500px;
+  width: 1700px;
+  background-position: center;
+  margin: -120px 0px 0px -120px;
+}
+#center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.our {
+  font-size: 4rem;
+}
+.first {
+  font-weight: 400;
+}
+.sec {
+  font-weight: bolder;
+}
+.heading {
+  font-size: 25px;
+}
+
+/* Style the tab */
+.tab {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(202, 12, 12);
+  background-color: #fffdfd;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  width: 20%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  font-weight: 300;
+  color: rgb(0, 102, 102);
+}
+
+/* Change background color of buttons on hover */
+#story {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+#Storyone {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  margin-top: 5px;
+  justify-content: space-between;
+}
+
+.storyone_img {
+  width: 49%;
+  height: 100% !important;
+}
+.storyone_img img {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+.storyone_para h3 {
+  color: rgb(0, 102, 102);
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 28px;
+}
+.storyone_para {
+  width: 49%;
+}
+.storyone_para p {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: normal;
+  vertical-align: baseline;
+  text-align: left;
+}
+#storytwo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.storyTwo_para {
+  width: 49%;
+}
+.storyTwo_para h3 {
+  color: rgb(0, 102, 102);
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 28px;
+}
+.storyTwo_para p {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: normal;
+  vertical-align: baseline;
+  text-align: left;
+}
+.story_two_img {
+  width: 49%;
+}
+.story_two_img img {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
