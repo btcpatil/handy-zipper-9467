@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Source+Sans+Pro:wght@200&display=swap"
         rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a22543f13c.js' crossorigin='anonymous'></script>
     <style>
         #container {
             display: grid;
@@ -51,7 +52,9 @@
             /* border:1px solid red; */
             font-family: 'Poppins', sans-serif;
             padding-left: 80px;
-        };
+        }
+
+        ;
 
         #sidebar>h3 {
             line-height: 23px;
@@ -67,10 +70,11 @@
             font-weight: 400;
             font-size: 16px;
         }
-        #mininav{
-            display:flex;
+
+        #mininav {
+            display: flex;
             justify-content: flex-end;
-            margin-right:80px;
+            margin-right: 80px;
             margin-bottom: 50px;
         }
 
@@ -88,16 +92,18 @@
             color:
                 rgb(163, 180, 155);
         }
-        button{
+
+        button {
             font-family: 'Poppins', sans-serif;
-            padding:8px 25px;
+            padding: 8px 25px;
 
         }
-        #showmore{
+
+        #showmore {
             font-family: 'Poppins', sans-serif;
-            padding:8px 25px;
-            display:block;
-            margin:auto;
+            padding: 8px 25px;
+            display: block;
+            margin: auto;
             background-color: white;
             margin-top: 70px;
 
@@ -109,21 +115,21 @@
     <h1>Products</h1>
     <div id="FrontUI">
         <div id="sidebar">
-            <h3>Health Category</h3>
-            <p>Herbal Supplements</p>
-            <p>Health interests</p>
-            <p>Oral care</p>
-            <p>Personal Care</p>
+            <h3>Health Category<i class="fa-duotone fa-angle-up"></i></h3>
+                <p>Herbal Supplements</p>
+                <p>Health interests</p>
+                <p>Oral care</p>
+                <p>Personal Care</p>
         </div>
         <div id="parent">
             <div id="mininav">
-                <select name="sort" id="sort">
-                    <option value="Best Selling">Best Selling</option>
+                <select name="sort" id="sort" onchange="sortFunction()">
+                    <option value="BestSelling">Best Selling</option>
                     <option value="Featured">Featured</option>
-                    <option value="Name Ascending">Name Ascending</option>
-                    <option value="Name Descending">Name Descending</option>
-                    <option value="Price Ascending">Price Ascending</option>
-                    <option value="Price Descending">Price Descending</option>
+                    <option value="NameAscending">Name Ascending</option>
+                    <option value="NameDescending">Name Descending</option>
+                    <option value="PriceAscending">Price Ascending</option>
+                    <option value="PriceDescending">Price Descending</option>
 
                 </select>
                 <select name="sortbynum" id="sortbynum">
@@ -138,10 +144,10 @@
             <div id="container"></div>
             <button id="showmore">Show more</button>
         </div>
-        
+
 
     </div>
-   
+
 
 
 </body>
