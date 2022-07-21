@@ -1,0 +1,208 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+#container {
+    width: 22%;
+    margin: auto;
+    padding: 0px 15px;
+}
+h1 {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 520;
+    padding: 0px 0px 37px;
+    color: #333333;
+}
+#container h2 {
+    font-size: 24;
+    font-weight: 500;
+    line-height: 35px;
+    padding: 0px 0px 10px;
+    color: #333333;
+}
+#login_email div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #777777;
+}
+#container input {
+    border: 0.5px solid rgb(210, 206, 206);
+    padding: 2px 12px 1px 18px;
+    color: #495057;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    line-height: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#container label sup {
+    font-size: 30px;
+    color: #777777;
+    position: relative;
+    top: 6px;
+}
+
+#container label {
+    font-size: 14px;
+    color: #777777;
+}
+#container button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 5px 20px 4px;
+    font-size: 13px;
+    background-color: #a3b49b;
+    color: #FFFFFF;
+    line-height: 35px;
+    border: none;
+    font-weight: 500;
+}
+#container #forgot_password{
+    margin-top: 20px;
+    font-size: 14px;
+}
+#container p a{
+    text-decoration: none;
+    color: #333333;
+}
+#container h3{
+    margin-top: 40px;
+    font-size: 24px;
+    line-height: 36px;
+    padding: 0px 0px 21px;
+    font-weight: 500;
+    color: #333333;
+}
+#container #login_text{
+    font-size: 18px;
+    font-weight: 400;
+    color: #777777;
+    line-height: 28px;
+}
+#container #signup_btn{
+    background-color: #66765f;
+    font-size: 13px;
+    line-height: 33px;
+   
+}
+#signup_btn a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+/* footer styles */
+
+#footer{
+    background-color: #EEF2F0;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+#flex-footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    width: 75%;
+    margin: auto;
+}
+#flex-footer  h4{
+    padding: 0px 0px 18px;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+#one-flex, #two-flex{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #66765F;
+}
+
+#footer #footer-mailId{
+    margin-bottom: 25px;
+
+}
+
+#footer #footer-mailId p:last-child{
+    font-size: 16px;
+    font-weight: 700;
+    color: #a3b49b;
+    line-height: 24px;
+}
+#footer #footer-phoneNumber{
+    margin-bottom: 25px;
+}
+#footer #footer-phoneNumber p:nth-child(2){
+    font-size: 16px;
+    font-weight: 700;
+    color: #a3b49b;
+    line-height: 24px;
+}
+
+#footer-address p:last-child{
+    padding-right: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #a3b49b;
+    line-height: 24px;
+}
+
+
+#flex-four-mail{
+    width: 80%;
+    background-color: white;
+    margin-bottom: 25px;
+}
+
+#flex-four-mail input{
+    border: none;
+    padding: 3px 49px 3px 12px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    width: 85%;
+}
+
+#four-flex p{
+    font-size: 16;
+    line-height: 28px;
+    margin: 13px 0px 0px;
+    padding-right: 50px;
+    margin-bottom: 30px;
+}
+
+#four-flex #socialMedia{
+    display: flex;
+}
+#four-flex #socialMedia div{
+    margin-left: 15px;
+    color: #777777;
+}
+
+#footer-bottom{
+    width: 75%;
+    margin: auto;
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
+#footer-bottom p{
+    font-size: 14px;
+    line-height: 28px;
+    color: #888888;
+    font-weight: 400;
+}
+#footer-bottom div{
+    margin-top: 10px;
+    border: 0.5px solid grey;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 28px;
+}

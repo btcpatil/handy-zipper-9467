@@ -1,0 +1,92 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+#container {
+    width: 22%;
+    margin: auto;
+    padding: 0px 15px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 520;
+    padding: 0px 0px 37px;
+    color: #333333;
+}
+
+#container h2 {
+    font-size: 24;
+    font-weight: 500;
+    line-height: 35px;
+    padding: 0px 0px 10px;
+    color: #333333;
+}
+
+#signup_firstname div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #777777;
+}
+
+#signup_firstname label sup {
+    font-size: 30px;
+    position: relative;
+    top: 6px;
+}
+
+#container input {
+    border: 0.5px solid rgb(210, 206, 206);
+    padding: 2px 12px 1px 18px;
+    color: #495057;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    line-height: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#container label sup {
+    font-size: 30px;
+    color: #777777;
+    position: relative;
+    top: 6px;
+}
+
+#container label {
+    font-size: 14px;
+    color: #777777;
+}
+
+#container button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 5px 20px 4px;
+    font-size: 13px;
+    background-color: #a3b49b;
+    color: #FFFFFF;
+    line-height: 35px;
+    border: none;
+    font-weight: 500;
+}
+
+#container p{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+#container p a{
+    text-decoration: none;
+    color: #333333;
+}
+
+#container p a:hover{
+    text-decoration: underline;
+}
