@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./signup.css">
+    
+</head>
+
+<body>
+    <h1>Create an Account</h1>
+    <div id="container">
+        
+        <h2>Personal Infomation</h2>
+        <div id="signup_firstname">
+            <div>
+                <label>First Name<sup>*</sup></label>
+                <label><sup>*</sup>Requried Fields</label>
+            </div>
+            <input id="fst_input" type="text" placeholder="Enter First Name">
+        </div>
+        <div id="signup_lastnane">
+            <label>Last Name<sup>*</sup></label><br />
+            <input id="last_input" type="text" placeholder="Enter Last Name">
+        </div>
+        <div id="signup_email">
+            <label>Email <sup>*</sup></label><br />
+            <input type="email" id="email_input" placeholder="Enter Email">
+        </div>
+        <div id="signup_password">
+            <label>Password<sup>*</sup></label><br />
+            <input type="password" id="password_input" placeholder="Enter Password">
+        </div>
+        <button onclick="signup()">CREATE</button>
+        <P>or <a href="">Return to store</a></P>
+
+    </div>
+</body>
+
+</html>
+<script src="./signup.js"></script>
