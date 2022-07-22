@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Source+Sans+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="personalcare.css" />
+  </head>
+  <body>
+    <div id="head"><h1>Personal Care</h1></div>
+
+    <div id="Master">
+      <div id="side">
+        <h3>Product Type</h3>
+      </div>
+      <div id="parent">
+        <div id="navlil">
+          <select name="sort" id="sort">
+            <option value="Best Selling">Best Selling</option>
+            <option value="Featured">Featured</option>
+            <option value="Name Ascending" selected>Name Ascending</option>
+            <option value="Name Descending">Name Descending</option>
+            <option value="Price Ascending">Price Ascending</option>
+            <option value="Price Descending">Price Descending</option>
+          </select>
+          <select name="sortbynum" id="sortbynum">
+            <option value="12">12</option>
+            <option value="16">16</option>
+            <option value="32">32</option>
+            <option value="ALL">ALL</option>
+          </select>
+        </div>
+        <div id="container"></div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./personalcare.js"></script>
