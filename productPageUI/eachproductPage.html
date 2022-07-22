@@ -16,8 +16,10 @@
             display: flex;
             justify-content: space-around;
             text-align: center;
-            margin-left: 80px;
-            margin-right: 80px;
+            /* margin-left: 80px;
+            margin-right: 80px; */
+            width: 85%;
+            margin: auto;
             margin-top: 50px;
         }
 
@@ -32,12 +34,12 @@
             height: 80%;
         }
 
-        p {
-            /* font-size: 20px; */
+        #Recommended>div>img+p {
+            font-size: 20px;
             font-family: 'Poppins', sans-serif;
             color:
-rgb(51, 51, 51);
-            /* font-weight: 700; */
+                rgb(51, 51, 51);
+            font-weight: 700;
         }
 
         #bottom_section>div>h3>p {
@@ -55,8 +57,10 @@ rgb(51, 51, 51);
             justify-content: space-around;
             font-family: 'Poppins', sans-serif;
             text-align: center;
-            margin-left: 80px;
-            margin-right: 80px;
+            /* margin-left: 80px;
+            margin-right: 80px; */
+            width: 85%;
+            margin: auto;
             margin-top: 50px;
         }
 
@@ -71,8 +75,10 @@ rgb(51, 51, 51);
             justify-content: space-around;
             font-family: 'Poppins', sans-serif;
             text-align: center;
-            margin-left: 80px;
-            margin-right: 80px;
+            /* margin-left: 80px;
+            margin-right: 80px; */
+            width: 85%;
+            margin: auto;
             margin-top: 150px;
             /* border: 1px solid teal; */
             padding: 50px 0;
@@ -88,121 +94,351 @@ rgb(51, 51, 51);
             margin: 0px 50px;
 
         }
-        #iconsdiv>div>i>h3>p{
-            margin-top:-10px;
+
+        #iconsdiv>div>i>h3>p {
+            margin-top: -10px;
         }
-        #nature_image>img{
-            width:88%;
-            height:300px;
+        #Nature{
+            position: relative;
+        }
+
+        #nature_image>img {
+            width: 80%;
+            height: 300px;
             border-radius: 20px;
-            display:flex;
+            display: flex;
             justify-content: center;
-            margin:auto;
-            margin-top:150px;
-            margin-bottom:20px;
+            margin: auto;
+            margin-top: 150px;
+            margin-bottom: 20px;
         }
-        #top_section{
-            display:flex;
-            border: 1px solid red;
+        .nature_text{
+            position: absolute;
+            top:90px;
+            left:450px;
+            color:white;
+            padding:20px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: lighter;
 
         }
-        #top_section >div{
-            width:60%;
-            border:1px solid green;
+
+        #top_section {
+            display: flex;
+            /* border: 1px solid red; */
+            width: 85%;
+            margin: auto;
+
+
+
         }
-        #top_section>div>img{
-            width:80%;
-            height:80%;
-            margin-left:120px;
+
+        #top_section>div {
+            width: 50%;
+            /* border: 1px solid green; */
+            justify-content: space-between;
+            /* margin-right:80px; */
         }
-        .click{
-            width:190px;
-            height:auto;
-            border:1px solid teal;
-            display:flex;
-            margin:auto;
+
+        #top_section>div>img {
+            width: 100%;
+            height: 50%;
+            margin-left: 0px;
+        }
+
+        .click {
+            width: 190px;
+            height: auto;
+            /* border:1px solid teal; */
+            display: flex;
+            margin: auto;
             justify-content: space-between;
         }
-        .click>div{
-            width:50%;
-            border:1px solid black;
-            
+
+        .click>div {
+            width: 50%;
+            /* border: 1px solid black; */
+            margin-right: 10px;
+
         }
-        .click>div>img{
-            width:100%;
+
+        .click>div>img {
+            width: 100%;
         }
-        #description{
+
+        #description {
             margin-right: 120px;
             font-family: 'Poppins', sans-serif;
-            margin-left:50px;
-
+            margin-left: 80px;
+            margin-right: 0px;
         }
-        #btn1{
-            padding:15px 130px;
+
+        #btn1 {
+            padding: 15px 130px;
             font-family: 'Poppins', sans-serif;
-            color:white;
-            background-color:#1a4448 ;
+            color: white;
+            background-color: #1a4448;
             border-radius: 25px;
-            justify-content:flex-end;
-            border:none;
+            justify-content: flex-end;
+            border: none;
 
         }
-        #btn2{
-            padding:15px 130px;
-            width:95%;
+
+        #btn2 {
+            padding: 15px 130px;
+            width: 95%;
             font-family: 'Poppins', sans-serif;
-            color:white;
+            color: white;
             background-color:
-#ff7451  ;
+                #ff7451;
             border-radius: 25px;
             justify-content: flex-start;
-            border:none;
+            border: none;
             margin-top: 15px;
 
+        }
+
+        .capsules {
+            width: 98%;
+            height: 110px;
+            /* border:1px solid red; */
+            background-color:
+                #f7f7f7;
+            border-radius: 10px;
+            margin: auto;
+        }
+
+        .v-line {
+            border-left: 2px solid black;
+            height: 80px;
+            left: 1150px;
+            position: absolute;
+            margin-top: 10px;
+        }
+
+        .capsules1 {
+            display: flex;
+            justify-content: space-between;
+            margin: 0px 40px 0px 30px;
+        }
+
+        hr {
+            margin-top: -5px;
+            width: 94%;
+            height: 0px;
+            border: none;
+            border-top: 2px solid black;
+
+            margin-bottom: -5px;
+        }
+
+        .free {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(auto, auto);
+            /* gap:20px; */
+            justify-content: space-evenly;
+
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        .free>div>img+p {
+            margin-top: -5px;
+        }
+
+        .restore {
+            font-family: 'Poppins', sans-serif;
+            width: 85%;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+            border-radius: 20px;
+            margin-top: 70px;
+            margin-bottom: 110px;
+            background-color:
+                #f7f7f7;
+
+
+
+        }
+
+        .restore>div {
+            width: 48%;
+            /* border: 1px solid pink; */
+            margin: 50px;
+
+        }
+
+        .restore>div>img {
+            width: 95%;
+            /* overflow: hidden;
+            background-image: linear-gradient(#f7f7f7);
+            opacity: 1 !important; */
+        }
+
+        .restoreIcons {
+            display: flex;
+            padding: 30px;
+            margin-top: -40px;
+        }
+
+        .restoreIcons>img {
+            width: 40px;
+            height: 40px;
+            margin-left: 20px;
+        }
+
+        .restoreIcons>img+p {
+            width: 300px;
+            margin-left: 30px;
+            margin-top: -3px;
+        }
+
+        .restoreDescription>h1+p {
+            margin-bottom: 50px;
+            width: 450px;
+        }
+
+        .restoreDescription>h1 {
+            font-weight: lighter;
         }
     </style>
 </head>
 
 <body>
+    <!-- topsection starts -->
     <div id="top_section">
         <div>
-            <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-3_1024x1024.png?v=1591028195" alt="">
+            <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-3_1024x1024.png?v=1591028195"
+                alt="">
             <div class="click">
                 <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-3_1024x1024.png?v=1591028195" alt="">
+                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-3_1024x1024.png?v=1591028195"
+                        alt="">
                 </div>
                 <div>
-                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Back-to-Balance-Cleanse-1_1024x1024.png?v=1595305403" alt="">
+                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Back-to-Balance-Cleanse-1_1024x1024.png?v=1595305403"
+                        alt="">
                 </div>
             </div>
-        </div> 
+        </div>
         <div id="description">
             <h1>Back to Balance Cleanse™</h1>
             <div>
-                <button id="btn1" >
-                    <span><i class="fa-thin fa-basket-shopping-simple" style="color:white"
-                        ></i></span>
+                <button id="btn1">
+                    <span><i class="fa-thin fa-basket-shopping-simple" style="color:white"></i></span>
                     <span> ADD TO CART</span>
-                    
+
                 </button>
             </div>
-            
+
             <div><button id="btn2">BUY IT NOW</button></div>
-            <p>To keep your body cleaner and feel less bloated, you deserve more than just a quick herbal purge. You deserve the morning and evening wisdom of Himalaya Back to Balance Cleanse, a gentle and effective two-part plant-based detox program.*</p>
+            <p>To keep your body cleaner and feel less bloated, you deserve more than just a quick herbal purge. You
+                deserve the morning and evening wisdom of Himalaya Back to Balance Cleanse, a gentle and effective
+                two-part plant-based detox program.*</p>
             <h3>Suggested Use</h3>
             <p>Part One: Take one capsule in the morning after breakfast.
 
                 Part two: Take one capsule in the evening after dinner.</p>
-            <h3>Days of Supply </h3>    
-            <p>Produced in a cGMP Good Manufacturing Practices certified facility and rigorously tested for identity, strength and safety using well recognized techniques and highly sophisticated instruments.
+            <h3>Days of Supply </h3>
+            <div class="capsules">
+                <div>
+                    <div class="v-line">
+                    </div>
+                    <div class="capsules1">
+                        <p>Size (Capsules)</p>
+                        <p>30</p>
+                    </div>
+                    <hr>
+                    <div class="capsules1">
+                        <p>Supply (Months)</p>
+                        <p>1</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="free">
+                <div>
+                    <img src="https://i.shgcdn.com/3843a046-e2bb-43fb-ab09-a51be92b6719/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+                        alt="">
+                    <p>Gluten Free</p>
+                </div>
+                <div>
+                    <img src="https://i.shgcdn.com/13b44f18-85c4-4156-8621-06a37c4ece8e/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+                        alt="">
+                    <p>Vegan</p>
+                </div>
+                <div>
+                    <img src="https://i.shgcdn.com/308b37db-5e9e-4f86-bb04-e36946ecfe03/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+                        alt="">
+                    <p>Soya Free</p>
+                </div>
+                <div>
+                    <img src="https://i.shgcdn.com/2a684ca6-e578-4739-9818-40b556e2dcc4/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+                        alt="">
+                    <p>Corn Free</p>
+                </div>
+                <div>
+                    <img src="https://i.shgcdn.com/90943036-b6e3-4ae1-8961-7b09f07f32aa/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+                        alt="">
+                    <p>Dairy Free</p>
+                </div>
+
+            </div>
+            <p>Produced in a cGMP Good Manufacturing Practices certified facility and rigorously tested for identity,
+                strength and safety using well recognized techniques and highly sophisticated instruments.
 
             </p>
             <p>Himalaya capsules do not contain magnesium stearate, animal gelatin, or artificial tableting glues.
 
             </p>
-            
-        </div> 
+
+        </div>
     </div>
+    <!-- topsection ends -->
+
+    <!-- restore section starts -->
+    <div class="restore">
+        <div class="restoreDescription">
+            <h1>Restore Regularity*</h1>
+
+            <p>With herbs like Chicory in your morning formula to support regular digestive movement* and Triphala in
+                your evening formula for digestive and bloating support, Himalaya Back to Balance Cleanse helps you
+                experience digestive efficiency and proper elimination.*
+
+            </p>
+            <div>
+                <div class="restoreIcons">
+                    <img src="https://i.shgcdn.com/ad66b522-4b74-4b4c-aba2-227c327af372/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+                        alt="">
+                    <p>Helps eliminate waste and relieves occasional bloating*</p>
+                </div>
+                <div class="restoreIcons">
+                    <img src="https://i.shgcdn.com/80a23653-cac3-4b62-a4e9-bde979ec0c70/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+                        alt="">
+                    <p>Restores regularity by supporting digestive metabolism*</p>
+                </div>
+                <div class="restoreIcons">
+                    <img src="https://i.shgcdn.com/674591c6-685d-4253-b5bf-c35bbb1419d9/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
+                        alt="">
+                    <p>Clinically studied for comfortable, cleansing bowel movements*</p>
+                </div>
+            </div>
+
+
+        </div>
+        <div>
+            <img src="https://files.widgetic.com/file/widgetic-uploads/app/5ef9f9f2ecb2a100078b4569/kcboo8dx-1rw153h.png"
+                alt="">
+
+        </div>
+    </div>
+    <!-- restore section ends -->
+
+    <!-- recommended section starts -->
     <div>
         <h2 style="text-align:center ">Recommended Products</h2>
     </div>
@@ -230,7 +466,9 @@ rgb(51, 51, 51);
 
         </div>
     </div>
-    
+    <!-- recommended section ends -->
+
+    <!-- icons section starts -->
     <div id="iconsdiv">
         <div>
             <i class="fa-solid fa-truck" style='font-size:36px'></i>
@@ -252,9 +490,19 @@ rgb(51, 51, 51);
 
         </div>
     </div>
-    <div id="nature_image">
-        <img src="https://us.123rf.com/450wm/narongcp/narongcp1706/narongcp170600003/80199561-paddy-fields-with-coconut-trees-and-blue-sky-in-thailand.jpg?ver=6" alt="">
+    <!-- icons section ends -->
+    <div id="Nature">
+        <div id="nature_image">
+            <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/beautiful-view-of-balinese-green-rice-growing-on-tropical-field-tjeerd-kruse.jpg"
+                alt="">
+            <!-- <img src="https://img.theculturetrip.com/450x/smart/wp-content/uploads/2021/09/h2btam.jpg" alt=""> -->
+        </div>
+        <div class="nature_text">
+            <h1>Our Commitment to Wellness </h1>
+        </div>
     </div>
+
+    <!-- bottom section starts -->
     <div id="bottom_section">
         <div>
             <h3>Our Herbs</h3>
@@ -271,6 +519,7 @@ rgb(51, 51, 51);
         </div>
 
     </div>
+    <!-- bottom section ends -->
 </body>
 
 </html>
