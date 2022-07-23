@@ -1,0 +1,18 @@
+#head{
+    background-color: rgb(255,116,81);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-family :  sans-serif;
+    font-size: 18px;       
+}
+#navbar{
+ display: flex;
+ /* border: 2px solid; */
+ justify-content: space-between;
+ height: 90px;
+ margin-left: 30px;
+ margin-right: 30px;
+}
