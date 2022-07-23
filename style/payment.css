@@ -1,0 +1,39 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#logo_box{
+   
+    text-align: center;
+}
+#amazon_logo{
+    width:103px;
+    height:40px;
+}
+#sign_in_box{
+    width:350px;
+    height:470px;
+    margin:auto;
+    text-align: center;
+    border:1px solid grey;
+    border-radius:10px;
+
+}
+p{
+    color:#555555;
+    text-align: center;
+    font-size:13px;
+
+}
+
+input{
+    width:90%;
+    height:30px;
+    margin:auto;
+    border-radius:3px;
+    margin-bottom:20px;
+    border:1px solid rgb(141, 130, 130);
+}
+
+input[type=submit]{
+    background-color: #f4d27f;
+}

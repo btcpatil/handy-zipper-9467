@@ -1,0 +1,340 @@
+* {
+  
+    font-family: "Open Sans", sans-serif !important;
+  }
+  .main {
+    width: 100%;
+    display: flex;
+    gap: 0.1%;
+  }
+  .mainhalf {
+    width: 50%;
+    height: 100%;
+    height: 900px;
+    padding: 5%;
+    background-color: white;
+  }
+  .rightmain {
+    background-color: #f4f7f3;
+  }
+  .logoDiv {
+    width: 100%;
+  }
+  .leftmain > .logoDiv > img {
+    width: 30%;
+  }
+  .pagelocation {
+    display: flex;
+    flex-direction: row;
+    margin: 3%;
+  }
+  .pagelocation > span {
+    font-size: 12px;
+    color: #55624f;
+  }
+  .paybuttonsdiv {
+    width: 85%;
+    display: flex;
+    margin-top: 5%;
+    border-radius: 6px;
+    border: 1px solid rgb(219, 221, 224);
+    padding: 4%;
+    gap: 2%;
+    justify-content: center;
+  }
+  .paybuttonsdiv > button {
+    width: 40%;
+    height: 40px;
+  }
+  .expcheckout {
+    z-index: 1;
+    position: absolute;
+    top: 25.8%;
+    width: 12%;
+    background-color: white;
+    left: 18%;
+    text-align: center;
+    font-weight: 599;
+  }
+  .lineOr {
+    width: 92%;
+    font-size: 12px;
+    opacity: 0.4;
+    color: #737373;
+  }
+  .lineOr > hr {
+    margin-top: 6%;
+  }
+  .lineOr > p {
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    position: sticky;
+    margin-top: -3.3%;
+    left: 22%;
+    width: 8%;
+    background-color: white;
+  }
+  .contatctinfoAndlogin {
+    display: flex;
+    gap: 13%;
+    margin-top: 6%;
+  }
+  .newsSelterlabel {
+    font-size: 14px;
+    color: #545454;
+    font-weight: 400;
+    line-height: 18px;
+    opacity: 0.9;
+  }
+  .loginOrSignup {
+    display: flex;
+    font-size: 14px;
+    color: #545454;
+    font-family: "Open Sans", sans-serif;
+    line-height: 23px;
+    opacity: 0.9;
+  }
+  .loginOrSignup span {
+    font-size: 14px;
+    color: #545454;
+    font-family: "Open Sans", sans-serif;
+    line-height: 21px;
+    opacity: 0.9;
+  }
+  #enteremailorMob {
+    width: 100%;
+    padding: 3%;
+    margin-top: 6%;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: rgb(225, 226, 228);
+  }
+  #newselter {
+    margin-top: 6%;
+  }
+  .shipaddress {
+    margin-top: 6%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #333333;
+    font-family: "Open Sans", sans-serif;
+    line-height: 23px;
+    width: 40%;
+    opacity: 0.9;
+  }
+  .firstlastname {
+    width: 100%;
+    display: flex;
+    gap: 2%;
+  }
+  .firstlastname > input {
+    width: 50%;
+    padding: 3%;
+    margin-top: 6%;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: rgb(225, 226, 228);
+  }
+  .detailinpaddress {
+    width: 100%;
+    padding: 3%;
+    margin-top: 3%;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: rgb(225, 226, 228);
+  }
+  .countryStateZip {
+    display: flex;
+    width: 106%;
+    gap: 1%;
+  }
+  .countryStateZip > input {
+    width: 100%;
+    padding: 3%;
+    margin-top: 3%;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: rgb(225, 226, 228);
+  }
+  .continueToShip {
+    width: 40%;
+    padding: 4%;
+    margin-top: 3%;
+    border-radius: 6px;
+    border: none;
+    background-color: #a7bd9e;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .bottomline {
+    margin-top: 3%;
+  }
+  .refundpolicy {
+    width: 40%;
+    display: flex;
+  }
+  .refundpolicy > p {
+    width: 50%;
+    font-size: 12px;
+    color: #55624f;
+    font-weight: 400;
+  }
+  .coupnAndApply {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    gap: 2%;
+  }
+  .coupnAndApply > input {
+    width: 80%;
+    padding: 3%;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: rgb(225, 226, 228);
+  }
+  .coupnAndApply > button {
+    width: 20%;
+    padding: 3%;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: rgb(225, 226, 228);
+    background-color: #c3c6c2;
+  }
+  .secondline {
+    margin-top: 5%;
+  }
+  .subtotal {
+    display: flex;
+    gap: 75%;
+  }
+  .nextstep {
+    font-size: 14px;
+    color: #6e6f6d;
+  }
+  
+  /* products */
+  .Imagenameprice {
+    width: 90%;
+    height: 240px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid lightslategrey;
+    margin: auto;
+  }
+  .maindiv {
+    display: flex;
+  }
+  .pdiv {
+    width: 60%;
+    display: flex;
+    gap: 10%;
+  }
+  .pdiv > p {
+    font-size: 14px;
+    color: #313131;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+  }
+  .sub {
+    font-size: 14px;
+    color: #515250;
+  }
+  .onInfo {
+    font-weight: bold;
+  }
+  .tot {
+    font-size: 16px;
+    color: #313131;
+    font-weight: 400;
+  }
+  .subtotal #usd {
+    color: #6e6f6d;
+    font-size: 12px;
+  }
+  .totalSum {
+    font-size: 24px;
+    color: #313131;
+    font-weight: 600;
+  }
+  .totalfinal {
+    display: flex;
+    align-items: center;
+  }
+  .pdiv > img {
+    width: 30%;
+  }
+  .pPrice {
+    font-size: 14px;
+    color: #313131;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    opacity: 0.7;
+  }
+  .shopPay {
+    background-image: url(../Images/shopPay.png);
+    background-size: contain;
+    background-size: 120px;
+    background-position: center;
+    border: none;
+  }
+  .AmazonPay {
+    background-image: url(../Images/amzonPay.jpg);
+    background-size: cover;
+    background-position: center;
+    border: none;
+    background-size: 130px;
+    background-repeat: no-repeat;
+    background-color: inherit;
+  }
+  .Gpay {
+    background-image: url(../Images/Gpay.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 150px 40px;
+    border: none;
+  }
+  .bottomdivInfo {
+    display: flex;
+    align-items: center;
+    gap: 8%;
+  }
+  .bottomdivInfo > p {
+    cursor: pointer;
+  }
+  .ctInfo {
+    font-size: 18px;
+    color: #333333;
+    font-family: "Open Sans", sans-serif;
+    line-height: 23px;
+    width: 40%;
+    opacity: 0.9;
+  }
+  .goToCart {
+    cursor: pointer;
+  }
+  .continueToShip {
+    cursor: pointer;
+  }
+  .coupnBt {
+    cursor: pointer;
+  }
+  .alredyHaveAnAccount {
+    cursor: pointer;
+  }
+  .alredyHaveAnAccount:hover {
+    color: #6e6f6d;
+  }
+  #imgpay{
+  
+    margin-right: 200px;
+    width: 110%;
+    height: 130%;
+  }
+  input{
+    /* background-color: red; */
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  }

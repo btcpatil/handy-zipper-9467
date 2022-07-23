@@ -1,0 +1,413 @@
+* {
+    /* border: 1px solid black; */
+    font-family: "Open Sans", sans-serif;
+  }
+  .main {
+    width: 100%;
+    display: flex;
+    gap: 0.1%;
+  }
+  .mainhalf {
+    width: 50%;
+    height: 100%;
+    height: 719px;
+    padding: 5%;
+    background-color: white;
+  }
+  .rightmain {
+    background-color: #f4f7f3;
+  }
+  .logoDiv {
+    width: 100%;
+  }
+  .leftmain > .logoDiv > img {
+    width: 30%;
+  }
+  .pagelocation {
+    display: flex;
+    flex-direction: row;
+    margin: 3%;
+  }
+  .pagelocation > span {
+    font-size: 12px;
+    color: #55624f;
+  }
+  .shippingSpanNav {
+    font-weight: bold;
+  }
+  
+  .continueToShip {
+    width: 40%;
+    padding: 4%;
+    margin-top: 3%;
+    border-radius: 6px;
+    border: none;
+    background-color: #a7bd9e;
+    font-weight: 500;
+    font-size: 16px;
+    color: #21241f;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .bottomline {
+    margin-top: 3%;
+    opacity: 0.4;
+  }
+  .refundpolicy {
+    width: 40%;
+    display: flex;
+  }
+  .refundpolicy > p {
+    width: 50%;
+    font-size: 12px;
+    color: #55624f;
+    font-weight: 400;
+  }
+  
+  .coupnAndApply {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    gap: 2%;
+  }
+  .coupnAndApply > input {
+    width: 80%;
+    padding: 3%;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: rgb(225, 226, 228);
+  }
+  .coupnAndApply > button {
+    width: 20%;
+    padding: 3%;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: rgb(225, 226, 228);
+    background-color: #c3c6c2;
+    cursor: pointer;
+  }
+  .secondline {
+    margin-top: 5%;
+  }
+  .subtotal {
+    display: flex;
+    gap: 75%;
+  }
+  .nextstep {
+    font-size: 14px;
+    color: #6e6f6d;
+  }
+  /* products */
+  .Imagenameprice {
+    width: 90%;
+    height: 230px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid lightslategrey;
+    margin: auto;
+  }
+  .maindiv {
+    display: flex;
+  }
+  .pdiv {
+    width: 60%;
+    display: flex;
+    gap: 10%;
+  }
+  .pdiv > p {
+    font-size: 14px;
+    color: #313131;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+  }
+  .pdiv > img {
+    width: 30%;
+  }
+  .pPrice {
+    font-size: 14px;
+    color: #313131;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    opacity: 0.7;
+  }
+  
+  .bottomdivInfo {
+    display: flex;
+    align-items: center;
+    gap: 8%;
+  }
+  .bottomdivInfo > p {
+    cursor: pointer;
+    color: #55624f;
+    font-size: 14px;
+  }
+  .shiipingInfo {
+    width: 100%;
+  }
+  .shiipingInfo > div {
+    display: flex;
+    align-items: center;
+  }
+  .shiipingInfo > div > p {
+    width: 50%;
+    padding: 1%;
+    margin-left: -10%;
+  }
+  .clickToChange {
+    cursor: pointer;
+    font-size: 12px;
+    color: #55624f;
+    margin-left: 14%;
+  }
+  .delMethod {
+    display: flex;
+    width: 100%;
+    border: 1px solid lightslategrey;
+    align-items: center;
+    justify-content: center;
+    gap: 70%;
+  }
+  .delMethod > p {
+    color: #545454;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .standarDel:checked {
+    border-width: 7px;
+  }
+  .standarDel {
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    transition: all 0.2 ease-in-out;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid;
+    vertical-align: -4px;
+    box-sizing: border-box;
+    border-color: #66765f;
+  }
+  .contactANdAddress {
+    border: 1px solid lightslategrey;
+  }
+  
+  .divup {
+    border-bottom: none;
+    /* border-top-right-radius: 5px;
+      border-top-left-radius: 5px; */
+  }
+  .contactANdAddress > p {
+    font-size: 14px;
+    color: #737373;
+    font-weight: 400;
+  }
+  .ShippingMethod {
+    font-size: 18px;
+    color: #333333;
+    font-family: "Open Sans", sans-serif;
+  }
+  .delMethod > label {
+    color: #545454;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .sub {
+    font-size: 14px;
+    color: #515250;
+  }
+  .tot {
+    font-size: 16px;
+    color: #313131;
+    font-weight: 400;
+  }
+  .subtotal #usd {
+    color: #6e6f6d;
+    font-size: 12px;
+  }
+  .totalSum {
+    font-size: 24px;
+    color: #313131;
+    font-weight: 600;
+  }
+  .totalfinal {
+    display: flex;
+    align-items: center;
+  }
+  .contactShip {
+    width: 20%;
+    margin-left: 4%;
+    margin-right: 0px;
+    font-size: #737373;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.7;
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* payment*/
+  
+  .paymentDiv {
+    width: 44.5%;
+    height: 460px;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    background-color: white;
+    display: none;
+  }
+  .creditCart {
+    display: flex;
+    width: 90%;
+    gap: 4%;
+    border: 1px solid lightslategrey;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom: none;
+  }
+  .div1 {
+    width: 60%;
+  }
+  .div2 {
+    width: 40%;
+    display: flex;
+  }
+  
+  .visaCard {
+    background-image: url(../Images/visalogo.png);
+    background-size: contain;
+    background-position: center;
+    width: 35%;
+    height: 25px;
+    background-repeat: no-repeat;
+  }
+  .masterCard {
+    background-image: url(../Images/masterCard.png);
+    background-position: center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    width: 25%;
+    height: 20px;
+  }
+  .americanExp {
+    background-image: url(../Images/americanCard.png);
+    width: 25%;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .elo {
+    background-image: url(../Images/eloCard.png);
+    width: 25%;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .creditDetail {
+    background-color: #fafafa;
+    width: 90%;
+    border: 1px solid lightslategrey;
+  }
+  .CCN {
+    width: 91%;
+    padding: 2%;
+    margin: 2%;
+  }
+  .dateAndCvv {
+    display: flex;
+    width: 100%;
+  }
+  .dateAndCvv > input {
+    padding: 2%;
+    margin: 2%;
+    width: 42%;
+  }
+  .bottomCredit {
+    width: 90%;
+    display: flex;
+    background-color: white;
+    border: 1px solid lightslategrey;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    align-items: center;
+    border-top: none;
+  }
+  .bottomCredit input {
+    cursor: pointer;
+  }
+  .amzonlogo {
+    background-image: url(../Images/amazonPay.png);
+    width: 120px;
+    height: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+  }
+  .buttonDiv {
+    display: flex;
+    width: 90%;
+    margin-top: 4%;
+    gap: 6%;
+    align-items: center;
+  }
+  #payNow {
+    width: 24%;
+    height: 30px;
+    border: 1px solid rebeccapurple;
+    background-color: #a3b49b;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .paymenttxt {
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333;
+  }
+  .paymenttxt + p {
+    color: #545454;
+    line-height: 21px;
+    font-size: 14px;
+    margin-top: 0%;
+  }
+  .retToinfo {
+    font-size: 14px;
+    color: #55624f;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .div1 input {
+    cursor: pointer;
+  }
+  .topPaydiv {
+    width: 82.3%;
+    display: flex;
+    gap: 4%;
+    border: 1px solid lightslategrey;
+    padding: 3%;
+    margin-top: -1%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: none;
+    margin-bottom: 3%;
+  }
+  .topPaydivspan1 {
+    margin-left: 1%;
+  }
+  .topPaydivspan2 {
+    margin-left: -12%;
+    margin-top: 50%;
+    margin-left:52%
+  }
+  #payNow{
+text-align: center;
+
+  }
+ 
