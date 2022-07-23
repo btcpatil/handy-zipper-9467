@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cart.css">
+    <script src="https://kit.fontawesome.com/6a4368f5b1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="container">
+
+        <h1>Shopping Cart</h1>
+        <hr>
+        <div id="sub_container">
+            <div onclick="delete_prd()" id="trash"><i class="fa-solid fa-trash-can"></i></div>
+            <div id="cart_image"></div>
+            <p id="prd_name"></p>
+            <div id="cart_price">
+                <div id="base_price"></div>
+                <div id="counter">
+                    <span onclick="reduce_qunt()" id="reduce_price">-</span>
+                    <span id="count">1</span>
+                    <span onclick="increase_qunt()" id="increase_price">+</span>
+                </div>
+                <div id="total_price"></div>
+            </div>
+        </div>
+        <hr>
+        <div id="extra_buttons">
+            <div id="continue_shopping">
+                <i class="fa-solid fa-angle-left"></i>
+                <div> Continue Shopping </div>
+            </div>
+
+            <div id="cart_function">
+                        <div id="clear_cart">
+                            <i class="fa-solid fa-trash-can"></i>
+                          <div> Clear Shopping Cart</div> 
+                        </div>
+                        <div onclick="update_price()" id="update_cart">
+                            <i class="fa-solid fa-rotate"></i>
+                         <div>   Update Cart</div>
+                        </div>
+            </div>
+         </div>
+
+         <div id="total">
+            <div></div>
+            <div id="total_div">
+                <div>
+                    <span>Subtotal :</span>
+                    <span id="sub_total"></span>
+                </div>
+                <div>
+                    <span>Grand Total :</span>
+                    <span id="grand_total"></span>
+                </div>
+                <button>PROCEED TO CHECKOUT</button>
+            </div>
+         </div>
+         <hr>
+         <h3 id="last_child">You May Be Interested in These Products</h3>
+    </div>
+</body>
+
+</html>
+
+<script src="cart.js"></script>
