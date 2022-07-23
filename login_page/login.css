@@ -4,6 +4,14 @@
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
 }
+
+
+#path{
+        
+    height: 30px;
+    width: 100%;
+    background-color: #f7f8fa;
+  }
 #container {
     width: 22%;
     margin: auto;

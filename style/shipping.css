@@ -14,6 +14,7 @@
     padding: 5%;
     background-color: white;
   }
+  
   .rightmain {
     background-color: #f4f7f3;
   }
@@ -101,12 +102,16 @@
   /* products */
   .Imagenameprice {
     width: 90%;
-    height: 230px;
-    overflow: scroll;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     border-bottom: 1px solid lightslategrey;
     margin: auto;
+    font-family: "Open Sans", sans-serif;
+  }
+  .Imagenameprice>img{
+    width: 100px;
+    height: 100px;
   }
   .maindiv {
     display: flex;
@@ -223,8 +228,11 @@
     font-weight: 400;
   }
   .subtotal #usd {
-    color: #6e6f6d;
-    font-size: 12px;
+    color: black;
+    font-size: 18px;
+    width: 100px;
+    font-weight: bold;
+    padding-left: 10px;
   }
   .totalSum {
     font-size: 24px;

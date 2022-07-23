@@ -1,13 +1,14 @@
 
 
- import {product_html,products,herbal_sidebar} from  "../export_file/export_product.js";
+ import {common_footer,product_html,products,herbal_sidebar} from  "../export_file/export_product.js";
 
- document.querySelector("body").innerHTML = product_html();
+ document.querySelector("#prd_body").innerHTML = product_html();
 
 
  document.querySelector("h1").innerText = "Herbal Supplements"
  
  document.getElementById("sidebar").innerHTML = herbal_sidebar();
+ document.getElementById("footer").innerHTML=common_footer();
 
  let  mensData = [
     {
@@ -132,7 +133,30 @@ function handleSort(){
   }
 }
 
-window.handleSort = handleSort;
+let loginData = JSON.parse(localStorage.getItem("loginData"));
+  if(loginData){
+   let login = document.getElementById("index_login");
+   login.innerText = loginData.fst_name;
+
+   let signup = document.getElementById("index_signup");
+   signup.style.visibility = "hidden";
+   }
+
+
+   let check_Cartprd=()=>{
+    let data = JSON.parse(localStorage.getItem("cart"));
+    if(data){
+        window.location.href = "../shopping_cart/cart.html";
+    }else{
+        window.location.href = "../shopping_cart/empty_cart.html";
+    }
+   }
+   
+   
+
+  window.check_Cartprd = check_Cartprd;
+
+  window.handleSort = handleSort;
 
 
   

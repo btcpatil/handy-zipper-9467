@@ -124,6 +124,8 @@ let products_sidebar = ()=>{
     <p class = "main_product" onclick="person_care()">Personal Care</p>`
 }
 
+
+
 let personal_sidebar= ()=>{
     return `<h3>Product Type</h3>`
 }
@@ -209,4 +211,4 @@ let common_header =()=>{
 }
 
 export {product_html,products,herbal_sidebar,oral_sidebar,
-     products_sidebar,personal_sidebar,common_footer};
+     products_sidebar,personal_sidebar,common_footer,common_header};

@@ -4,10 +4,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/6a4368f5b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../common_css/footer.css">
+    <link rel="stylesheet" href="../common_css/header.css">
     <style>
         *{
             font-family: Poppins, sans-serif;
         }
+        #path{
+        
+        height: 30px;
+        width: 100%;
+        background-color: #f7f8fa;
+      }
         #empty_cart{
             width: 50%;
             margin: auto;
@@ -17,29 +26,36 @@
            align-items: center;
         }
         #empty_cart img{
-            margin-top: 200px;
+            margin-top: 150px;
             width: 250px;
             height: 200px;
+            margin-bottom: 20px;
         }
         #empty_cart h1{
             font-size: 36px;
             font-weight: 500;
             line-height: 43px;
             color: #333333;
+            margin-bottom: 20px;
         }
+        
         #empty_cart p{
             font-size: 16px;
             font-weight: 500;
             line-height: 28px;
             color: #333333;
+            margin-bottom: 15px;
         }
+
         #empty_cart button{
             padding: 5px 29px 4px;
             font-size: 14px;
             font-weight: 500;
             line-height: 33px;
+            margin-bottom: 30px;
            
         }
+
         #empty_cart button a{
             text-decoration: none;
             color: #333333;
@@ -50,12 +66,49 @@
     
 </head>
 <body>
+
+    <div id="common_header">
+        <div id="head">
+            FREE SHIPPING ON ALL ORDERS ABOVE $35!
+          </div>
+          <div id="navbar">
+              <div>
+                  <button><a href="../Homepage/index.html"><img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/new-logo.png?3734" alt=""></a></button>
+                  <button class="anim"><a href="../main_products/main_produnct.html">Shop</a></button>
+                  <button class="anim"><a href="../about/about.html">About</a></button>
+                  <button class="anim"><a href="../storelocator/storeMap.html">Store Locator</a></button>
+              </div>
+              
+              <div>
+                  <button><a id="index_signup" href="../signup/signup.html">Signup</a></button>
+                  <button><a id="index_login" href="../login_page/login.html">LogIn</a></button>
+                  <button onclick="check_Cartprd()" id="check_Cartprd">Cart</button>
+              </div>
+          </div>
+    </div>
+    <div id="path"></div>
+
+
     <div id="empty_cart">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXMP3wuf_tgIfxykBhvHCTqx-hY0acuJHH--NOpVizazHkw1FQ93TbJFNw-tcJ86ZUoz8&usqp=CAU" alt="">
         <h1>Shopping cart is empty</h1>
         <p>You have no items in your shopping cart.</p>
         <button> <a href="../main_products/main_produnct.html">Continue Shopping</a> </button>
     </div>
+
+    <div id="footer">
+    </div>
 </body>
 </html>
+
+<script type="module">
+
+import {common_footer} from  "../export_file/export_product.js";
+
+document.getElementById("footer").innerHTML=common_footer();
+
+
+
+
+</script>
 

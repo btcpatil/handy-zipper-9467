@@ -101,26 +101,37 @@ function verify(e) {
       parent.append(maindiv);
     });
   }
-  showProducts();
-  var sum = 0;
-  var subtotal = document.querySelector(".subTotalSum");
-  var totalSum = document.querySelector(".totalSum");
-  for (var i = 0; i < prodArr.length; i++) {
-    sum += Number(prodArr[i].Price) * Number(prodArr[i].quant);
-  }
-  subtotal.innerHTML = "$" + sum.toFixed(2);
-  totalSum.innerHTML = "$" + sum.toFixed(2);
+  // showProducts();
+  // var sum = 0;
+  // var subtotal = document.querySelector(".subTotalSum");
+  // var totalSum = document.querySelector(".totalSum");
+  // for (var i = 0; i < prodArr.length; i++) {
+  //   sum += Number(prodArr[i].Price) * Number(prodArr[i].quant);
+  // }
+  // subtotal.innerHTML = "$" + sum.toFixed(2);
+  // totalSum.innerHTML = "$" + sum.toFixed(2);
   
-  var coupn = document.getElementById("coupn");
-  var coupnBt = document.querySelector(".coupnBt");
-  coupnBt.onclick = function () {
-    if (coupn.value === "FIRSTUSER50") {
-      totalSum.innerHTML = "$" + ((sum * 50) / 100).toFixed(2);
-    } else {
-      alert("Invalid Coupon Code .Try FIRSTUSER50");
-    }
-  };
+  // var coupn = document.getElementById("coupn");
+  // var coupnBt = document.querySelector(".coupnBt");
+  // coupnBt.onclick = function () {
+  //   if (coupn.value === "FIRSTUSER50") {
+  //     totalSum.innerHTML = "$" + ((sum * 50) / 100).toFixed(2);
+  //   } else {
+  //     alert("Invalid Coupon Code .Try FIRSTUSER50");
+  //   }
+  // };
+
+
+  let prd_data = JSON.parse(localStorage.getItem("cart"));
+
+  document.getElementById("prd_qunt").innerText= `x ${prd_data.count}`;
+
+  document.getElementById("total_price").innerText= `$ ${prd_data.count*29.95}`;
   
+
+  document.querySelector(".subTotalSum").innerText = `$ ${prd_data.count*29.95+5}`;
+
+  document.querySelector("#usd").innerText = `$ ${prd_data.count*29.95+5}`;
   
   
   

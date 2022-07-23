@@ -3,10 +3,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Himalaya Wellness: Herbal Supplements, Toothpaste & More!
+        – Himalaya Wellness (US)</title>
+        
+        <!-- <link rel="stylesheet" href="../common_css/footer.css"> -->
+
+    <script src="https://kit.fontawesome.com/6a4368f5b1.js" crossorigin="anonymous"></script>
     <style>
         body{
             width: 100%;
+            border: 1px solid red;
             margin-left: 0%;
             margin-top: 0%;
             font-family :sans-serif;
@@ -287,9 +293,12 @@ height: 100%;
     -webkit-filter: grayscale(1);
    filter: grayscale(1);
 }
-
-
-
+#path{
+        
+        height: 30px;
+        width: 100%;
+        background-color: #f7f8fa;
+      }
 
     </style>
 </head>
@@ -301,17 +310,18 @@ height: 100%;
         <div id="navbar">
             <div>
                 <button><a href=""><img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/new-logo.png?3734" alt=""></a></button>
-                <button class="anim"><a href="">Shop</a></button>
-                <button class="anim"><a href="">About</a></button>
-                <button class="anim"><a href="">Store Locator</a></button>
+                <button class="anim"><a href="../main_products/main_produnct.html">Shop</a></button>
+                <button class="anim"><a href="../about/about.html">About</a></button>
+                <button class="anim"><a href="../storelocator/storeMap.html">Store Locator</a></button>
             </div>
             
             <div>
-                <button><a href="sighup.html">Signup</a></button>
-                <button><a href="login.html">LogIn</a></button>
-                <button><a href="cart.html">Cart</a></button>
+                <button ><a id="index_signup" href="../signup/signup.html">Signup</a></button>
+                <button ><a id="index_login" href="../login/login.html">login_page/login.html">LogIn</a></button>
+                <button onclick="check_Cartprd()" id="check_Cartprd">Cart</button>
             </div>
         </div>
+        <div id="path"></div>
 
         <div class="banner">
            <img src="//cdn.shopify.com/s/files/1/0399/1728/9633/files/hero-desktop-ashwagandha_x720.jpg?v=1608662725" alt="">
@@ -513,22 +523,39 @@ height: 100%;
     
     
    </div>
-      
 
+   <!-- <div id="footer">
+</div> -->
+    
       
 </body>
 </html>
 
 
 
+<script type="module">
+// import {common_footer} from  "../export_file/export_product.js";
+// document.getElementById("footer").innerHTML=common_footer();
 
+let check_Cartprd=()=>{
+    let data = JSON.parse(localStorage.getItem("cart"));
+    if(data){
+        window.location.href = "../shopping_cart/cart.html";
+    }else{
+        window.location.href = "../shopping_cart/empty_cart.html";
+    }
+}
 
+let loginData = JSON.parse(localStorage.getItem("loginData"));
+if(loginData){
+   let login = document.getElementById("index_login");
+   login.innerText = loginData.fst_name;
 
+   let signup = document.getElementById("index_signup");
+   signup.style.visibility = "hidden";
+}
 
-<script>
-
-   
-
+window.check_Cartprd = check_Cartprd;
 
 
 

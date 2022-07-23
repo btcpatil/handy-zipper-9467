@@ -10,7 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Source+Sans+Pro:wght@200&display=swap"
         rel="stylesheet">
     <script src='https://kit.fontawesome.com/a22543f13c.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="../common_css/footer.css">
+    <link rel="stylesheet" href="../common_css/header.css">
     <title>Each Product</title>
+
+    
     <style>
         #Recommended {
             display: flex;
@@ -178,6 +182,7 @@
 
         #description>h1 {
             font-size: 40px;
+            margin-bottom: 15px;
         }
 
         h1+h1 {
@@ -207,7 +212,21 @@
             justify-content: flex-start;
             border: none;
             margin-top: 15px;
+            margin-bottom: 30px;
 
+        }
+
+        #mjpatil {
+            margin-bottom: 15px;
+        }
+
+        #mjpatil_2 {
+            margin-bottom: 10px;
+        }
+
+        #mjpatil_3 {
+            margin-top: 25px;
+            margin-bottom: 15px;
         }
 
         .capsules {
@@ -218,30 +237,44 @@
                 #f7f7f7;
             border-radius: 10px;
             margin: auto;
+            border: 1px solid #f7f7f7;
         }
 
         .v-line {
             border-left: 2px solid black;
             height: 80px;
-            left: 1150px;
+            left: 1350px;
             position: absolute;
-            margin-top: 10px;
+            margin-top: 3px;
         }
 
         .capsules1 {
             display: flex;
             justify-content: space-between;
-            margin: 0px 40px 0px 30px;
+            margin-top: 20px;
+            margin-bottom: -15px;
+            padding-left: 30px;
+            padding-right: 60px;
+            
+        }
+        .capsules2 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: px;
+            margin-bottom: -15px;
+            padding-left: 30px;
+            padding-right: 60px;
+            
         }
 
         hr {
-            margin-top: -5px;
+            margin-top: 25px;
             width: 94%;
             height: 0px;
             border: none;
             border-top: 2px solid black;
 
-            margin-bottom: -5px;
+            margin-bottom: 5px;
         }
 
         .free {
@@ -323,7 +356,7 @@
 
         #cartCounter {
             display: flex;
-            
+
 
 
         }
@@ -339,16 +372,44 @@
             padding: 15px 0px;
             border-radius: 30px;
             background-color: #f8f8f8;
-            margin-right:20px;
+            margin-right: 20px;
         }
 
-        #reduce_price, #increase_price{
+        #reduce_price,
+        #increase_price {
             cursor: pointer;
         }
+        #path{
+        
+        height: 30px;
+        width: 100%;
+        background-color: #f7f8fa;
+      }
     </style>
 </head>
 
 <body>
+    <div id="common_header">
+        <div id="head">
+            FREE SHIPPING ON ALL ORDERS ABOVE $35!
+        </div>
+        <div id="navbar">
+            <div>
+                <button><a href="../Homepage/index.html"><img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/new-logo.png?3734"
+                            alt=""></a></button>
+                <button class="anim"><a href="../main_products/main_produnct.html">Shop</a></button>
+                <button class="anim"><a href="../about/about.html">About</a></button>
+                <button class="anim"><a href="../storelocator/storeMap.html">Store Locator</a></button>
+            </div>
+
+            <div>
+                <button><a id="index_signup" href="../signup/signup.html">Signup</a></button>
+                <button><a id="index_login" href="../login_page/login.html">LogIn</a></button>
+                <button onclick="check_Cartprd()" id="check_Cartprd">Cart</button>
+            </div>
+        </div>
+    </div>
+    <div id="path"></div>
     <!-- topsection starts -->
     <div id="top_section">
         <div>
@@ -384,15 +445,16 @@
                 </div>
             </div>
 
-            <div onclick="payment_page()"><button  id="btn2">BUY IT NOW</button></div>
-            <p>To keep your body cleaner and feel less bloated, you deserve more than just a quick herbal purge. You
+            <div onclick="payment_page()"><button id="btn2">BUY IT NOW</button></div>
+            <p id="mjpatil">To keep your body cleaner and feel less bloated, you deserve more than just a quick herbal
+                purge. You
                 deserve the morning and evening wisdom of Himalaya Back to Balance Cleanse, a gentle and effective
                 two-part plant-based detox program.*</p>
-            <h3>Suggested Use</h3>
+            <h3 id="mjpatil_2">Suggested Use</h3>
             <p>Part One: Take one capsule in the morning after breakfast.
 
                 Part two: Take one capsule in the evening after dinner.</p>
-            <h3>Days of Supply </h3>
+            <h3 id="mjpatil_3">Days of Supply </h3>
             <div class="capsules">
                 <div>
                     <div class="v-line">
@@ -402,7 +464,7 @@
                         <p>30</p>
                     </div>
                     <hr>
-                    <div class="capsules1">
+                    <div class="capsules2">
                         <p>Supply (Months)</p>
                         <p>1</p>
 
@@ -573,50 +635,79 @@
 
     </div>
     <!-- bottom section ends -->
+    <div id="footer"></div>
 </body>
 
 </html>
 
-<script>
-   let data = JSON.parse(localStorage.getItem("cart"));
-   if(!data){
-    let obj = {
-        count :1
+<script  type="module">
+    import {common_footer} from "../export_file/export_product.js";
+
+    document.getElementById("footer").innerHTML = common_footer();
+
+    let data = JSON.parse(localStorage.getItem("cart"));
+    if (!data) {
+        let obj = {
+            count: 1
+        }
+        localStorage.setItem("cart", JSON.stringify(obj));
     }
-    localStorage.setItem("cart", JSON.stringify(obj));
+
+    let reduce_qunt = () => {
+
+        if (data.count > 1) {
+            data.count = --data.count;
+            localStorage.setItem("cart", JSON.stringify(data));
+            let count = document.getElementById("count");
+            count.innerText = data.count;
+        }
+    }
+
+    let increase_qunt = () => {
+
+        data.count = ++data.count;
+        localStorage.setItem("cart", JSON.stringify(data));
+        let count = document.getElementById("count");
+        count.innerText = data.count;
+
+    }
+
+    window.increase_qunt = increase_qunt;
+    window.reduce_qunt = reduce_qunt;
+
+    let cart_page = () => {
+        window.location.href = "../shopping_cart/cart.html"
+    }
+
+
+    let payment_page = () => {
+        window.location.href = "../shivaji.html"
+    }
+
+
+    
+  let loginData = JSON.parse(localStorage.getItem("loginData"));
+  if(loginData){
+   let login = document.getElementById("index_login");
+   login.innerText = loginData.fst_name;
+
+   let signup = document.getElementById("index_signup");
+   signup.style.visibility = "hidden";
    }
 
-    let reduce_qunt=()=>{
+
+   let check_Cartprd=()=>{
+    let data = JSON.parse(localStorage.getItem("cart"));
+    if(data){
+        window.location.href = "../shopping_cart/cart.html";
+    }else{
+        window.location.href = "../shopping_cart/empty_cart.html";
+    }
+   }
    
-   if(data.count>1){
-     data.count=--data.count;
-     localStorage.setItem("cart", JSON.stringify(data));
-     let count = document.getElementById("count");
-     count.innerText = data.count;
-   }
- }
-
- let increase_qunt=()=>{
-  
-  
-     data.count=++data.count;
-     localStorage.setItem("cart", JSON.stringify(data));
-     let count = document.getElementById("count");
-     count.innerText = data.count;
-  
- }
-
-
- let cart_page = ()=>{
-    window.location.href =""
- }
-
-
- let payment_page = ()=>{
-    window.location.href =""
- }
-
- 
+    window.check_Cartprd = check_Cartprd;
+    window.cart_page = cart_page;
+    window.payment_page = payment_page;
 
 
 </script>
