@@ -1,0 +1,536 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            margin-left: 0%;
+            margin-top: 0%;
+            font-family :sans-serif;
+        }
+       
+        #head{
+            background-color: rgb(255,116,81);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            font-size: 18px;       
+        }
+        #navbar{
+         display: flex;
+         /* border: 2px solid; */
+         justify-content: space-between;
+         height: 90px;
+         margin-left: 30px;
+         margin-right: 30px;
+        }
+
+        #navbar>div>button>a>img{
+           height: 75%;
+        }
+        #navbar>div>button{
+            border: none;
+            font-size: 20px;
+            color: grey;
+            background: #fff;
+            border-color: #fff;
+        } 
+        #navbar>div{
+            display: flex;
+            gap: 30px;
+        }
+
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+        a:hover {
+        color:rgb(170, 192, 159); 
+        cursor:pointer;  
+       }
+
+        .anim {
+        display: inline-block;
+        position: relative;
+        color: rgb(170, 192, 159);
+        }
+
+        .anim:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 3px;
+        bottom: 0px;
+        left: 0;
+        background-color: rgb(170, 192, 159);
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+        }
+
+        .anim:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+        }
+         
+        
+        .banner>img{
+            width: 100%;
+            height: 550px;
+        }
+        #overlap{
+        margin-top: -25%;
+        
+        }
+        #overlap>button{
+         padding-left: 13%;
+         padding-right: 30px;
+        border: none;
+         
+        }
+        button h1 {
+         font-size: 40px;
+         letter-spacing:2.38px;
+         margin-top: 10px;
+        }
+        #overlap>p{
+            margin-left: 13%;
+            width: 25%;
+            font-weight: none;
+            font-size: 20px;
+            color:RGB(51, 51, 51);
+        }
+        .shop>button{
+           background-color: #48cab2;
+           padding: 15 40;
+           margin-left: 13%;
+           color: white;
+           font-family: bold;
+           font-size: 14px;
+           border: none;
+        }
+        .category{
+            margin-top: 15%;
+            width: 100%;
+            /* border: 2px solid red; */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .category>div:last-child{
+            display: flex;
+            width: 85%;
+            margin: auto;
+            padding-top: 20px;
+            /* border: 2px solid green; */
+            justify-content: space-around;
+            
+        }
+        .category>div:last-child>div{
+        /* border: 2px solid; */
+        width: 27%;
+        }
+
+        .category>div:last-child>div{
+            transition: all .5s;
+            -moz-transition: all .5s;
+            -webkit-transition: all .5s;
+            -o-transition: all .5s;
+            -ms-transition: all .5s;
+        }
+        .category>div:last-child>div:hover{
+            transform : scale(1.15);
+        -moz-transform : scale(1.15);
+        -webkit-transform : scale(1.15);
+        -o-transform : scale(1.15);
+        -ms-transform : scale(1.15);
+        }
+       
+        
+        .category>div:last-child>div>img{
+            width: 90%;
+        }
+
+
+
+    #trendings{
+    width: 85.5%;
+    margin: auto;
+    margin-top: 50px;
+    /* justify-content: space-around; */
+}
+
+
+#trendings>h3{
+     text-align: center;
+     margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#trend {
+  width: 95%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  padding: 10px 50px;
+}
+#trend > main>section>div {
+  border: 1px solid;
+  border-color: grey;
+  margin: 20px;
+  padding: 15px;
+  height: 150px;
+}
+
+#trend > section>div>a p+p{
+/* border: 2px solid red; */
+color: grey;
+font-size: 15px;
+margin-top: 40px;
+}
+
+
+#trend > section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: left;
+  overflow-x: auto;
+}
+#trend > section::-webkit-scrollbar {
+  visibility:hidden;
+}
+#trend > section > div {
+  min-width: 31.33%;
+  height: auto;
+  position: relative;
+  left: 0;
+  margin-top: 20px;
+  /* right: 50; */
+  /* color: black;
+  transition: 1.5s;
+  justify-content: center;
+  align-items: center; */
+
+}
+.slide>a>img{
+    height: 320px;
+    width: 300px;
+    
+}
+.slide{
+    text-align: center;
+    font-size: 18px;
+}
+
+#wisdom{
+    display: flex;
+    margin-top: 110px;
+    /* border: 2px solid; */
+}
+#wisdom>div>img{
+width: 200px;
+height: 90%;
+/* border: 2px solid; */
+}
+#wisdom>div:last-child{
+    font-family :sans-serif;
+    margin-left: 10px;
+    line-height: 10px;
+    /* text-align: center; */
+    /* font-size: 30px; */
+}
+#wisdom>div:last-child>div>p{
+    line-height: 30px;
+    margin-top: 40px;
+    
+}
+
+#sm{
+    display: flex;
+}
+#sm{
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    height: 60px;
+}
+#sm>div:last-child>img{
+height: 100%;
+}
+#insta{
+    display: flex;
+    /* border: 2px solid; */
+    margin-top: 30px;
+}
+#insta>div{
+    margin: auto;
+    margin-bottom: 50px;
+}
+#insta>div>a>img{
+    /* border: 2px solid; */
+    height: 280px;
+    width: 95%;
+
+   
+}
+#insta>div>a>img:hover{
+    /* border: 2px solid; */
+    height: 280px;
+    width: 95%;
+    -webkit-filter: grayscale(0);
+    filter: none;
+    -webkit-filter: grayscale(1);
+   filter: grayscale(1);
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <div id="head">
+          FREE SHIPPING ON ALL ORDERS ABOVE $35!
+        </div>
+        <div id="navbar">
+            <div>
+                <button><a href=""><img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/new-logo.png?3734" alt=""></a></button>
+                <button class="anim"><a href="">Shop</a></button>
+                <button class="anim"><a href="">About</a></button>
+                <button class="anim"><a href="">Store Locator</a></button>
+            </div>
+            
+            <div>
+                <button><a href="sighup.html">Signup</a></button>
+                <button><a href="login.html">LogIn</a></button>
+                <button><a href="cart.html">Cart</a></button>
+            </div>
+        </div>
+
+        <div class="banner">
+           <img src="//cdn.shopify.com/s/files/1/0399/1728/9633/files/hero-desktop-ashwagandha_x720.jpg?v=1608662725" alt="">
+        </div>
+
+        <div id="overlap">
+            <button><h1>ASHWAGANDHA</h1></button> 
+            <p>A star performer for stress and energy in a potent, organic caplet.</p>
+        </div>
+        <div class="shop">
+            <button><a href="">SHOP NOW</a></button>
+        </div>
+
+        <div class="category">
+            <div><h1>Shop By Category</h1></div>
+            <div>
+                <div>
+                   <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/HUSA-Ashwagandha-90ct-Carton_Bottle-square_1024x.png?v=1607451904" alt="">
+                   <a href="">
+                    <h4>Supplements</h4>
+                   <p>See All Supplements</p>
+                   </a>
+                </div>
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/WCC-SIMPLY-MINT-RENDER-WITH-BRUSH-High-Res_1024x.png?v=1607451904" alt="">
+                    <a href="">
+                        <h4>Oral Care</h4>
+                        <p>See All Oral Care</p>
+                    </a>
+                </div>
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/Face_Wash-Balancing-Box-Bottle-square_1024x.png?v=1607451904" alt="">
+                    <a href="">
+                        <h4>Personal Care</h4>
+                        <p>See All Personal Care</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="trendings">
+        <h3>Best Sellers</h3>
+        <main id="trend">
+          <section>
+            <div class="slide">
+             <a href="">
+                <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaAshwagandha30ctCarton-Bottle_front_-600x600-950dd6f_edd94945-f1dd-40b5-b41e-81f2d635daa3_800x.png?v=1655738427" alt="">
+                <p>Organic Ashwagandha</p>
+             </a>
+            </div>
+            <div class="slide">
+                 <a href="">
+                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Whitening-Mint---Box-Tube_800x.png?v=1597743896" alt="">
+                    <p>Simply Mint Whitening ToothPaste</p>
+                 </a>
+            </div>
+            <div class="slide">
+                <a href="">            
+                      <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Himalaya_LiverCare_42ct_-_Carton_Bottle_800x.png?v=1654789186" alt="">
+                      <p>LiverCare</p>
+                </a>
+            </div>
+            <div class="slide">
+                 <a href="">
+                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/ImmunoCare-120---Box-Bottle_800x.png?v=1595814320" alt="">
+                   <p>ImmunoCare</p>
+                 </a>
+            </div>
+            <div class="slide">
+                <a href="">
+                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Neem-and-Pom---Box-Tube_800x.png?v=1597744049" alt="">
+                    <p>Neem & Pomegranate Original Toothpaste</p>
+                </a>
+            </div>
+            <div class="slide">
+                <a href="">
+                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaAmla60ct-CartonandBottle-600x600-950dd6f_800x.png?v=1655738075" alt="">
+                    <p>Organic Amla</p>
+                </a>
+            </div>
+            <div class="slide">
+                <a href="">     
+                        <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaAshwagandha30ctCarton-Bottle_front_-600x600-950dd6f_edd94945-f1dd-40b5-b41e-81f2d635daa3_800x.png?v=1655738427" alt="">
+                        <p>Organic Ashwagandha</p>
+                </a>       
+             </div>
+             <div class="slide">
+                    <a href="">
+                        <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Whitening-Mint---Box-Tube_800x.png?v=1597743896" alt="">
+                        <p>Simply Mint Whitening ToothPaste</p>
+                    </a>          
+            </div>
+            <div class="slide">
+                <a href="">              
+                    <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Himalaya_LiverCare_42ct_-_Carton_Bottle_800x.png?v=1654789186" alt="">
+                    <p>Liver Care</p>
+                 </a>
+            </div>
+          </section>
+
+          <div id="wisdom">
+               <div>
+                <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/StressCareA-Main-647x1024.png?v=1591359475" alt="">
+               </div>
+               <div>
+                  <div>
+                    <h1>Unlock the Wisdom of Herbs</h1>
+                    <h2>with Herbal Supplements, Toothpaste & More!</h2>
+                  </div>
+                  <div>
+                    <p>Since 1930,  Himalaya has been passionate about the healing wisdom of herbs. We offer a wide range of clinically-studied herbal supplements, toothpaste and personal care products that unlock the powerful healing benefits of herbs.</p>
+                  </div>
+               </div>
+          </div>
+
+   <main id="trend">
+    <section>
+        <div class="slide">
+            <a href="">
+               <p>"We've tried countless fluoride-free toothpastes,and this is our favorite!"</p>
+               <p>Organic Ashwagandha</p>
+            </a>
+           </div>
+           <div class="slide">
+                <a href="">
+                   <p>“I'm amazed. I'm less irritable and tired, and more calm and centered."</p>
+                   <p>Simply Mint Whitening ToothPaste</p>
+                </a>
+           </div>
+           <div class="slide">
+               <a href="">         
+                   <p>“Recommended to me by my local health food store. This product is a godsend."</p>   
+                     <p>LiverCare</p>
+               </a>
+           </div>
+           <div class="slide">
+                <a href="">
+                   <p>“Can't go a day without it. A total game-changer for stress.”</p>
+                  <p>ImmunoCare</p>
+                </a>
+           </div>
+           <div class="slide">
+               <a href="">
+                   <p>"I've seen such a drastic difference in my memory, it's hard to believe.”</p>
+                   <p>Neem & Pomegranate Original Toothpaste</p>
+               </a>
+           </div>
+           <div class="slide">
+               <a href="">
+                   <p>“I will never use another toothpaste as long as I can get this one.“</p>
+                   <p>Organic Amla</p>
+               </a>
+           </div>
+           <div class="slide">
+               <a href="">  
+                   <p>"I work in the supplement industry, and THIS is the Turmeric you should use.“</p>   
+                   <p>Organic Ashwagandha</p>
+               </a>       
+            </div>
+
+    </section>
+
+   </main>
+
+   <div>
+    <div id="sm">
+            <div>
+                <h1>Follow us @himalayausa</h1>
+            </div>
+            <div>
+                <img src="data:image/png;base64,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" alt="">
+                <img src="data:image/png;base64,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" alt="">
+            </div>
+    </div >
+            <div id="insta" >
+                <div>
+                    <a href="https://www.instagram.com/p/CcqO1DcOZPa/">
+                        <img src="https://scontent.cdninstagram.com/v/t51.2885-15/279060214_1028931348020017_977861928696093797_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=r9nhx1mTtc0AX8SZf9o&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8Q2kZ6FvzrPUgS-u19-jos94dhlaUoCBwWGVnZcGIXfA&oe=62E14707" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/p/CbfhW6Ts4ii/">
+                        <img src="https://scontent.cdninstagram.com/v/t51.2885-15/277292932_5613162492028340_2851075865814001728_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=MJ31aavv5uUAX8IDs75&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8eq_rrYAWbWsM9vmb15GN0jh2zqkH4Bsm0Euwsagc-mg&oe=62DF844B" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/p/CQ_oHAqj_Df/">
+                        <img src="https://scontent.cdninstagram.com/v/t51.2885-15/210602775_2989071524684964_2920882526894167214_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=fIejmsKYB2AAX8cPIw-&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8coevS33y790WBvLoo2lclgydZ_TYB9qTcoCax6bbhhg&oe=62E123C5" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/p/CcqO1DcOZPa/">
+                        <img src="https://scontent.cdninstagram.com/v/t51.2885-15/204274359_2975479076040360_2380187042423867081_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=Mz0sGUCilL4AX9K6SOn&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT_t4WQ0KizUjyT0RXuWdIaFemIAJ75ePU61WQJstvGy5g&oe=62DFAF2B" alt="">
+                    </a>
+                </div>
+                
+            </div>
+    
+    
+   </div>
+      
+
+      
+</body>
+</html>
+
+
+
+
+
+
+
+<script>
+
+   
+
+
+
+
+
+</script>
