@@ -341,6 +341,10 @@
             background-color: #f8f8f8;
             margin-right:20px;
         }
+
+        #reduce_price, #increase_price{
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -374,13 +378,13 @@
 
                     <button id="btn1">
                         <span><i class="fa-thin fa-basket-shopping-simple" style="color:white"></i></span>
-                        <span> ADD TO CART</span>
+                        <span onclick="cart_page()"> ADD TO CART</span>
 
                     </button>
                 </div>
             </div>
 
-            <div><button id="btn2">BUY IT NOW</button></div>
+            <div onclick="payment_page()"><button  id="btn2">BUY IT NOW</button></div>
             <p>To keep your body cleaner and feel less bloated, you deserve more than just a quick herbal purge. You
                 deserve the morning and evening wisdom of Himalaya Back to Balance Cleanse, a gentle and effective
                 two-part plant-based detox program.*</p>
@@ -574,6 +578,14 @@
 </html>
 
 <script>
+   let data = JSON.parse(localStorage.getItem("cart"));
+   if(!data){
+    let obj = {
+        count :1
+    }
+    localStorage.setItem("cart", JSON.stringify(obj));
+   }
+
     let reduce_qunt=()=>{
    
    if(data.count>1){
@@ -593,6 +605,18 @@
      count.innerText = data.count;
   
  }
+
+
+ let cart_page = ()=>{
+    window.location.href =""
+ }
+
+
+ let payment_page = ()=>{
+    window.location.href =""
+ }
+
+ 
 
 
 </script>
