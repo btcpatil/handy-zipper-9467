@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="./style/shipping.css">
+  
+</head>
+
+<body>
+    <div class="main">
+        <div class="leftmain mainhalf">
+            <div class="logoDiv">
+                <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/new-logo.png?3133" alt="">
+            </div>
+            <div class="pagelocation">
+                <span class="gotoCart cursor">Cart</span>
+                <span><img class="navarrow" width="15px" src="../Images/download.png" alt=""></span>
+                <span class="goToInfo cursor">Information</span>
+                <span><img class="navarrow" width="15px" src="../Images/download.png" alt=""></span>
+                <span class="shippingSpanNav">Shipping</span>
+                <span><img class="navarrow" width="15px" src="../Images/download.png" alt=""></span>
+                <span class="paymentSpanNav">Payment</span>
+            </div>
+            <div class="shiipingInfo">
+                <div class="contactANdAddress divup"><span class="contactShip">Contact</span>
+                    <p class="contactInfo"></p> <span class="clickToChange">Change</span>
+                </div>
+                <div class="contactANdAddress"><span class="contactShip">Ship to</span>
+                    <p class="addressInfo"></p> <span class="clickToChange">Change</span>
+                </div>
+            </div>
+            <div class="shippingMethodDiv">
+                <p class="ShippingMethod">Shipping method</p>
+                <div class="delMethod"> <label for=""><input class="standarDel" type="radio" checked>Standard</label>
+                    <p>Free</p>
+                </div>
+            </div>
+            <div class="bottomdivInfo">
+                <button class="continueToShip">Continue to payment</button>
+                <p class="goToInfo cursor">Return to Information</p>
+            </div>
+            <div class="paymentDiv">
+                <!-- <div class="topPaydiv">
+                    <span class="contactShip topPaydivspan1">Method</span>
+                    <span class="contactShip topPaydivspan2"> Standard<span class="nextstep">-Free</span></span>
+                </div> -->
+                <form action="" onsubmit="pay(event)">
+                    <span class="paymenttxt">Payment</span>
+                    <p>All transactions are secure and encrypted.</p>
+                    <div class="creditCart">
+                        <div class="div1">
+                            <label for=""><input type="radio">Credit Card</label>
+                        </div>
+                        <div class="div2">
+                            <p class="visaCard"></p>
+                            <p class="masterCard"></p>
+                            <p class="americanExp"></p>
+                            <p class="elo"></p>
+                        </div>
+                    </div>
+                    <div class="creditDetail">
+                        <input type="text" class="creditCardNumber CCN" placeholder="Card number">
+                        <input type="text" class="nameOnCard CCN" placeholder="Name on card">
+                        <div class="dateAndCvv">
+                            <input type="text" placeholder="Expiration date(MM/YY)" class="expdate">
+                            <input type="text" placeholder="Security code" class="cvv">
+                        </div>
+                    </div>
+                    <div class="bottomCredit">
+                        <label for=""> <input type="radio" class="clickOnAmazonPAy"></label>
+                        <p class="amzonlogo"></p>
+                    </div>
+                    <div class="buttonDiv">
+                        <!-- <button id="payNow"> Pay Now</button> -->
+                        <!-- <a href="thankyou.html"> <button id="payNow">Pay Now </button> </a> -->
+                        <a href="thx.html" id="payNow" style="color: black ;">Pay Now</a>
+                        <p class="retToinfo">Return to Information</p>
+                    </div>
+                </form>
+            </div>
+            <hr class="bottomline">
+            <div class="refundpolicy">
+                <p>Refund policy</p>
+                <p>Shipping policy</p>
+            </div>
+        </div>
+        <div class="rightmain mainhalf">
+            <div class="Imagenameprice">
+
+            </div>
+            <div class="coupnAndApply">
+                <input type="text" name="" id="coupn" placeholder="Discount Code">
+                <button class="coupnBt">Apply</button>
+            </div>
+            <hr class="secondline">
+            <div class="subtotal">
+                <p class="sub">Subtotal</p>
+                <p class="subTotalSum">$29.95</p>
+            </div>
+            <div class="subtotal">
+                <p class="sub">Shipping</p>
+                <p class="nextstep"><strong>Free</strong></p>
+            </div>
+            <hr class="secondline">
+            <div class="subtotal">
+                <p class="tot">Total</p>
+                <div class="totalfinal"><span id="usd">USD</span><span class="totalSum"></div>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</script></body> 
+
+</html>
+<script src="./script/shipping.js"></script>
