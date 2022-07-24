@@ -9,6 +9,7 @@
     width:103px;
     height:40px;
 }
+
 #sign_in_box{
     width:350px;
     height:470px;
@@ -37,3 +38,4 @@ input{
 input[type=submit]{
     background-color: #f4d27f;
 }
+

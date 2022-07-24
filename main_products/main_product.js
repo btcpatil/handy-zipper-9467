@@ -1,62 +1,62 @@
 
-  import {product_html,products, products_sidebar} from  "../export_file/export_product.js";
+  import {common_footer,product_html,products, products_sidebar} from  "../export_file/export_product.js";
 
-  document.querySelector("body").innerHTML = product_html();
- 
- 
+  document.querySelector("#prd_body").innerHTML = product_html();
+  
   document.querySelector("h1").innerText = "Product"
   
   document.getElementById("sidebar").innerHTML =  products_sidebar();
 
+  document.getElementById("footer").innerHTML=common_footer();
 
 const mensData = [
     {
       image_url:
         "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-3_1024x.png?v=1591028195",
-        name:"Organic Ashwagandha",
+        name:"Back to Balance Cleanse™",
       price: "14.95",
     },
     {
       image_url:
         "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaBambooToothpaste-Tube_Front_1024x.png?v=1613065864",
-      name: "LiverCare® ",
+      name: "Bamboo & Sea Salt Whitening Antiplaque Toothpaste",
       price: "17.95",
     },
     {
       image_url:
         "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/BEAUTY_bodybar_purifying-2_1024x.png?v=1595909766",
-      name: "StressCare®",
+      name: "Body Bar: Purifying (Neem & Turmeric)",
       price: "18.95",
     },
     {
       image_url:
         "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/BEAUTY_bodybar_refreshing-1_1024x.png?v=1595909931",
-      name: "Organic Gymnema",
+      name: "Body Bar: Refreshing (Lavender & Rosemary)",
       price: "14.95",
     },
     {
       image_url:
         "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaBoswellia60ct-CartonBottle-600x600-950dd6f_1024x.png?v=1655738928",
-      name: "Neem & Pomegranate Original Toothpaste",
+      name: "Boswellia",
       price: "5.99",
     },
    
     {
       image_url:
         "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaCharcoalToothpaste-Tube_Front_1024x.png?v=1613059882",
-      name: "MindCare® ",
+      name: "Charcoal & Black Seed Oil Whitening Antiplaque Toothpaste",
       price: "24.49",
     },
     {
       image_url:
         "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaChestBalmPMwithHerbCartonJar_1024x.png?v=1624548043",
-      name: "Simply Mint Whitening Toothpaste ",
+      name: "Chest Balm P.M.",
       price: "5.99",
     },
     {
       image_url:
         "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaChyavanprash60ct-CartonBottle-600x600-950dd6f_1024x.png?v=1655739033",
-      name: "Organic Bitter Melon  ",
+      name: "Chyavanprash",
       price: "12.95",
     },
     {
@@ -160,6 +160,29 @@ window.handleSort = handleSort;
     window.location.href ="../personal_care/personal_care.html";
   }
 
+
+  let loginData = JSON.parse(localStorage.getItem("loginData"));
+  if(loginData){
+   let login = document.getElementById("index_login");
+   login.innerText = loginData.fst_name;
+
+   let signup = document.getElementById("index_signup");
+   signup.style.visibility = "hidden";
+   }
+
+
+   let check_Cartprd=()=>{
+    let data = JSON.parse(localStorage.getItem("cart"));
+    if(data){
+        window.location.href = "../shopping_cart/cart.html";
+    }else{
+        window.location.href = "../shopping_cart/empty_cart.html";
+    }
+   }
+
+   
+   
+  window.check_Cartprd = check_Cartprd;
   window.herbal_sup = herbal_sup;
   window.health_int = health_int;
   window.oral_care = oral_care;

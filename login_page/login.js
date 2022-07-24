@@ -15,7 +15,7 @@ function login(){
                 if(ele.Email===email && ele.password === password){
                     localStorage.setItem("loginData", JSON.stringify(ele));
                     alert("login successful!");
-                    window.location.href = ""
+                    window.location.href = "../Homepage/index.html"
                 }else{
                     alert("Your email address or password is wrong! ")
                 }
@@ -27,6 +27,4 @@ function login(){
         alert("Required fields should not be empty")
     }
      
-
-
     }

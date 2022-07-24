@@ -1,3 +1,7 @@
+import {common_footer} from  "../export_file/export_product.js";
+
+document.getElementById("footer").innerHTML=common_footer();
+
 function signup(){
     function input_value(id){
        return document.getElementById(id).value;
@@ -29,3 +33,6 @@ function signup(){
         alert("Please fill the requiered fields");
     }
 }
+
+
+window.signup = signup;

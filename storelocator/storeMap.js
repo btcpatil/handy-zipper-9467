@@ -24,3 +24,12 @@ function appendRight(mapData) {
 }
 
 
+let check_Cartprd=()=>{
+    let data = JSON.parse(localStorage.getItem("cart"));
+    if(data){
+        window.location.href = "../shopping_cart/cart.html";
+    }else{
+        window.location.href = "../shopping_cart/empty_cart.html";
+    }
+}
+

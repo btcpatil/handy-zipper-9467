@@ -5,6 +5,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+#path{
+        
+    height: 30px;
+    width: 100%;
+    background-color: #f7f8fa;
+  }
 #container{
     width: 75%;
     margin: auto;
@@ -16,6 +23,7 @@ h1{
     line-height: 43px;
     padding: 0px 0px 37px;
     text-align: center;
+    margin-top: 20px;
 }
 hr{
     border: 0.3px solid;

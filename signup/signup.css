@@ -5,11 +5,13 @@
     font-family: Poppins, sans-serif;
 }
 
+
 #container {
     width: 22%;
     margin: auto;
     padding: 0px 15px;
 }
+
 
 h1 {
     text-align: center;
@@ -19,6 +21,7 @@ h1 {
     padding: 0px 0px 37px;
     color: #333333;
 }
+
 
 #container h2 {
     font-size: 24;

@@ -4,8 +4,15 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+
+#path{
+        
+  height: 30px;
+  width: 100%;
+  background-color: #f7f8fa;
+}
 #grass {
-  position: relative;
+  margin-top: 150px;
   text-align: center;
   color: white;
 }
