@@ -657,6 +657,7 @@
 
         if (data.count > 1) {
             data.count = --data.count;
+           
             localStorage.setItem("cart", JSON.stringify(data));
             let count = document.getElementById("count");
             count.innerText = data.count;
@@ -664,8 +665,9 @@
     }
 
     let increase_qunt = () => {
-
+        data = (JSON.parse(localStorage.getItem("cart")));
         data.count = ++data.count;
+        console.log(data.count);
         localStorage.setItem("cart", JSON.stringify(data));
         let count = document.getElementById("count");
         count.innerText = data.count;
