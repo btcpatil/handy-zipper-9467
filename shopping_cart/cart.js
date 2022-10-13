@@ -18,7 +18,7 @@ document.getElementById("footer").innerHTML=common_footer();
 
   let img_div = document.getElementById("cart_image");
   let image = document.createElement("img");
-  image.src = "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-3_1024x.png?v=1591028195";
+  image.src = "../himalaya_project_images/healthCatogary_product/back-to-balance-cleanse-297598_1024x.webp";
   img_div.append(image);
 
   let prd_name = document.getElementById("prd_name");

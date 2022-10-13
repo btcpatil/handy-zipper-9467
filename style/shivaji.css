@@ -21,7 +21,7 @@
   .logoDiv {
     width: 100%;
   }
-  .leftmain > .logoDiv > img {
+  .leftmain > .logoDiv > a>img {
     width: 30%;
   }
   .pagelocation {

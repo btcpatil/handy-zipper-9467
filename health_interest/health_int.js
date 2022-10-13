@@ -12,75 +12,75 @@ document.getElementById("footer").innerHTML=common_footer();
 let  mensData = [
    {
      image_url:
-       "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-3_1024x.png?v=1591028195",
+       "../himalaya_project_images/healthInterest_product/back-to-balance-cleanse-297598_1024x.webp",
        name:"Back to Balance Cleanse™",
      price: "14.95",
    },
    {
      image_url:
-       "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaBoswellia60ct-CartonBottle-600x600-950dd6f_1024x.png?v=1655738928",
+       "../himalaya_project_images/healthSuppliment_product/boswellia-829056_1024x.webp",
      name: "Boswellia",
      price: "17.95",
    },
    {
      image_url:
-       "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaChyavanprash60ct-CartonBottle-600x600-950dd6f_1024x.png?v=1655739033",
+       "../himalaya_project_images/healthSuppliment_product/chyavanprash-105275_1024x.webp",
      name: "Chyavanprash",
      price: "18.95",
    },
    {
      image_url:
-       "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-33_1024x.png?v=1591027962",
+       "../himalaya_project_images/healthSuppliment_product/comfortcleanse-636861_1024x.webp",
      name: "ComfortCleanse®",
      price: "14.95",
    },
    {
      image_url:
-       "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-30_1024x.png?v=1590836814",
+       "../himalaya_project_images/healthSuppliment_product/curcumin-complete-187497_1024x.webp",
      name: "Curcumin Complete™",
      price: "5.99",
    },
   
    {
      image_url:
-       "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-34_1024x.png?v=1591027900",
+       "../himalaya_project_images/healthSuppliment_product/dermacare-422043_1024x.webp",
      name: "DermaCare® ",
      price: "24.49",
    },
    {
      image_url:
-       "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-69_1024x.png?v=1590836866",
+       "../himalaya_project_images/healthSuppliment_product/floravani-718088_1024x.webp",
      name: "FlorAvani®",
      price: "5.99",
    },
    {
      image_url:
-       "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-126_1024x.png?v=1591028001",
+       "../himalaya_project_images/healthSuppliment_product/glucocare-445898_1024x.webp",
      name: "GlucoCare® ",
      price: "12.95",
    },
    {
      image_url:
-       "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaGuggul60ctCarton-Bottle_front_-600x600-950dd6f_1024x.png?v=1655739599 ",
+       "../himalaya_project_images/healthSuppliment_product/guggul-989338_1024x.webp",
      name: "Guggul",
      price: "22.95",
    },
    {
      image_url:
-       "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-36_fbc92680-5171-436b-acc1-6a5a6a2ac59c_1024x.png?v=1591028013",
+       "../himalaya_project_images/healthSuppliment_product/heartcare-353117_1024x.webp",
      name: "HeartCare®",
      price: "19.99",
    },
    {
      image_url:
-       "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HUSAHELLOENERGYBOX_BOTTLE_1024x.jpg?v=1608243299 ",
+       "../himalaya_project_images/healthSuppliment_product/hello-calm-mind-673401_1024x.webp",
      name: "Hello Energy®",
      price: "23.95",
    },
    {
      image_url:
-       "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HUSAHELLOJOYBOX_BOTTLE_1024x.jpg?v=1608241956",
-     name: "Face Scrub: Exfoliating ",
+       "../himalaya_project_images/healthSuppliment_product/ashwagandharelax-787355_1024x (1).webp",
+     name: "Ashwagandharelax",
      price: "8.99",
    },
   

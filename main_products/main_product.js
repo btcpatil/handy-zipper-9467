@@ -12,75 +12,75 @@
 const mensData = [
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-3_1024x.png?v=1591028195",
+        "../himalaya_project_images/healthCatogary_product/back-to-balance-cleanse-297598_1024x.webp",
         name:"Back to Balance Cleanse™",
       price: "14.95",
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaBambooToothpaste-Tube_Front_1024x.png?v=1613065864",
+        "../himalaya_project_images/healthCatogary_product/bamboo-sea-salt-whitening-antiplaque-toothpaste-363920_1024x.webp",
       name: "Bamboo & Sea Salt Whitening Antiplaque Toothpaste",
       price: "17.95",
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/BEAUTY_bodybar_purifying-2_1024x.png?v=1595909766",
+        "../himalaya_project_images/healthCatogary_product/body-bar-purifying-neem-turmeric.webp",
       name: "Body Bar: Purifying (Neem & Turmeric)",
       price: "18.95",
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/BEAUTY_bodybar_refreshing-1_1024x.png?v=1595909931",
+        "../himalaya_project_images/healthCatogary_product/body-bar-refreshing-lavender-rosemary.webp",
       name: "Body Bar: Refreshing (Lavender & Rosemary)",
       price: "14.95",
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaBoswellia60ct-CartonBottle-600x600-950dd6f_1024x.png?v=1655738928",
+        "../himalaya_project_images/healthCatogary_product/boswellia.webp",
       name: "Boswellia",
       price: "5.99",
     },
    
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaCharcoalToothpaste-Tube_Front_1024x.png?v=1613059882",
+        "../himalaya_project_images/healthCatogary_product/charcoal-black-seed-oil-whitening-antiplaque-toothpaste.webp",
       name: "Charcoal & Black Seed Oil Whitening Antiplaque Toothpaste",
       price: "24.49",
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaChestBalmPMwithHerbCartonJar_1024x.png?v=1624548043",
+        "../himalaya_project_images/healthCatogary_product/chest-balm-pm.webp",
       name: "Chest Balm P.M.",
       price: "5.99",
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaChyavanprash60ct-CartonBottle-600x600-950dd6f_1024x.png?v=1655739033",
+        "../himalaya_project_images/healthCatogary_product/chyavanprash.webp",
       name: "Chyavanprash",
       price: "12.95",
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-33_1024x.png?v=1591027962",
+        "../himalaya_project_images/healthCatogary_product/comfortcleanse.webp",
       name: "ComfortCleanse®",
       price: "22.95",
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-30_1024x.png?v=1590836814",
+        "../himalaya_project_images/healthCatogary_product/curcumin-complete.webp",
       name: "Curcumin Complete™  ",
       price: "19.99",
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-34_1024x.png?v=1591027900 ",
+        "../himalaya_project_images/healthCatogary_product/dermacare.webp",
       name: "DermaCare®",
       price: "23.95",
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/BEAUTY_facewash_exoliatingwwa_bottlebox_1024x.png?v=1595909354 ",
-      name: "Face Scrub: Exfoliating (Walnut & Wood Apple)",
+        "../himalaya_project_images/healthCatogary_product/ashwagandharelax-787355_1024x.webp",
+      name: "Ashwagandharelax",
       price: "8.99",
     },
    

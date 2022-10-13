@@ -13,52 +13,52 @@ import {common_footer,product_html,products, personal_sidebar} from  "../export_
 const mensData = [
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/BEAUTY_bodybar_purifying-2_1024x.png?v=1595909766",
-        name:"Organic Ashwagandha",
+        "../himalaya_project_images/personalCare_product/body-bar-purifying-neem-turmeric-342355_1024x.webp",
+        name:"Body-bar-purifying-neem-turmeric",
       price: "14.95",
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/BEAUTY_bodybar_refreshing-1_1024x.png?v=1595909931",
-      name: "LiverCare® ",
+        "../himalaya_project_images/personalCare_product/body-bar-refreshing-lavender-rosemary-879892_1024x.webp",
+      name: "Body-bar-refreshing-lavender-rosemary ",
       price: "17.95",
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaChestBalmPMwithHerbCartonJar_1024x.png?v=1624548043",
-      name: "StressCare®",
+        "../himalaya_project_images/personalCare_product/chest-balm-pm-819164_1024x.webp",
+      name: "Chest-balm-pm",
       price: "18.95",
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/BEAUTY_facewash_exoliatingwwa_bottlebox_1024x.png?v=1595909354",
-      name: "Organic Gymnema",
+        "../himalaya_project_images/personalCare_product/face-scrub-exfoliating-walnut-wood-apple-119171_1024x.webp",
+      name: "Face-scrub-exfoliating-walnut-wood-apple",
       price: "14.95",
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/BEAUTY_facewash_balancing_neem_turmeric_bottlebox_1024x.png?v=1595909161",
-      name: "Neem & Pomegranate Original Toothpaste",
+        "../himalaya_project_images/personalCare_product/face-wash-balancing-neem-turmeric-914790_1024x.webp",
+      name: "Face-wash-balancing-neem-turmeric",
       price: "5.99",
     },
    
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/BEAUTY_facewash_hydrating_bottlebox_1024x.png?v=1595909481",
-      name: "MindCare® ",
+        "../himalaya_project_images/personalCare_product/face-wash-hydrating-797207_1024x.webp",
+      name: "Face-wash-hydrating",
       price: "24.49",
     },
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaWarmingBodyBalmCartonJarwithherb_1024x.png?v=1624547923",
-      name: "Simply Mint Whitening Toothpaste ",
+        "../himalaya_project_images/personalCare_product/face-wash-invigorating-397240_1024x.webp",
+      name: "Face-wash-invigorating",
       price: "5.99",
     },
     
     {
       image_url:
-        "https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HimalayaWarmingBodyBalmCartonJarwithherb_1024x.png?v=1624547923",
-      name: "Face Scrub: Exfoliating (Walnut & Wood Apple)",
+        "../himalaya_project_images/personalCare_product/warming-body-balm-370691_1024x.webp",
+      name: "Warming-body-balm",
       price: "8.99",
     },
    
